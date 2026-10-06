@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>TheCawa | Open Source Projects Portfolio</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -15,14 +15,30 @@
             align-items: center;
             justify-content: center;
             color: #1e3a8a;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .container {
+            max-width: 650px;
+            text-align: left;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.05);
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #1e3a8a;
             text-align: center;
         }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.8;
+        .subtitle {
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.7;
+            text-align: center;
+            line-height: 1.5;
         }
         ul {
             list-style: none;
@@ -30,31 +46,55 @@
             margin: 0;
         }
         li {
-            margin: 1rem 0;
+            margin-bottom: 1.8rem;
+        }
+        li:last-child {
+            margin-bottom: 0;
         }
         a {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             font-weight: 600;
             color: #2563eb;
             text-decoration: none;
             transition: color 0.2s;
+            display: inline-block;
+            margin-bottom: 0.25rem;
         }
         a:hover {
             color: #1d4ed8;
             text-decoration: underline;
+        }
+        .desc {
+            font-size: 0.95rem;
+            color: #475569;
+            line-height: 1.5;
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <p>This is for indexing, nothing personal.</p>
+        <h1>TheCawa's Dev Space</h1>
+        <p class="subtitle">A curated collection of open-source software engineering projects, experiments, and developer tools.</p>
         
         <ul>
-            <li><a href="https://github.com/TheCawa/CawOS">CawOS</a></li>
-            <li><a href="https://github.com/TheCawa/DRP">DRP</a></li>
-            <li><a href="https://github.com/TheCawa/noveng">noveng</a></li>
-            <li><a href="https://github.com/TheCawa/IST">IST</a></li>
+            <li>
+                <a href="https://github.com/TheCawa/CawOS">CawOS</a>
+                <p class="desc">A multifunctional 32-bit operating system for x86 (i686) architecture, written from scratch in C and Assembly. Features a custom bootloader, pre-emptive multitasking, custom file system (CawFS), and a GUI desktop.</p>
+            </li>
+            <li>
+                <a href="https://github.com/TheCawa/DRP">DRP (Drowning Rat Protocol)</a>
+                <p class="desc">A lightweight, application-layer transport protocol built for aggressive, persistent retransmission and guaranteed message delivery over high-loss channels.</p>
+            </li>
+            <li>
+                <a href="https://github.com/TheCawa/noveng">noveng</a>
+                <p class="desc">A lightweight and high-performance visual novel script engine written in C++17, featuring automated saves, internal variable processing, and custom UI elements.</p>
+            </li>
+            <li>
+                <a href="https://github.com/TheCawa/IST">IST</a>
+                <p class="desc">A dedicated emulator, development toolkit, and documentation repository focusing on custom processor architecture simulation.</p>
+            </li>
         </ul>
     </div>
 
